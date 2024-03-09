@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.overlay::before {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay::after {
+  /* background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0)
+  ); */
+  background-color: rgba(0, 0, 0, 0.7);
+}
